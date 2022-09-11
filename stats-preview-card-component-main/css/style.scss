@@ -1,0 +1,181 @@
+$general_background: hsl(233, 47%, 7%);
+$card_background: hsl(244, 38%, 16%);
+$blanco:hsl(0, 0%, 100%);
+$main_paragraph:hsla(0, 0%, 100%, 0.75);
+$stats_heading:hsla(0, 0%, 100%, 0.6);
+$accent:hsl(277, 64%, 61%);
+
+#main_container{
+    width: 100%;
+}
+    #principal_section{
+        min-height: 100vh;
+        width: 100%;
+        background-color: $general_background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        background-color: $card_background;
+        display: flex;
+        width: 68.8125rem;
+        height: 26.25rem;
+        border-radius: .5rem;
+    }    
+
+    .text_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    .principal_text{
+        font-family: 'Inter', sans-serif;
+        color: $blanco;
+        font-size: 2.3125rem;
+        font-weight: 700;
+        margin: 3.125rem 3.125rem 1rem 3.125rem;
+        text-align: start;
+
+        span{
+            color: $accent;
+        }
+    }    
+
+    .paragraph{
+        font-family: 'Inter', sans-serif;
+        color: $main_paragraph;
+        font-size: 1.1rem;
+        margin: 0 4.125rem 0 3.125rem;
+        line-height: 1.8rem;
+        text-align: start;
+    }            
+
+    .info_cards{
+        display: flex;
+        justify-content: space-around;
+        color: $blanco;
+        margin: 1.5625rem 3.125rem 3.125rem 1rem;
+        text-align: start;
+        
+
+        div{
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5625rem;
+            margin: 0;
+            display: flex;
+            font-weight: 700;
+            flex-direction: column;
+            justify-content: center;
+
+            p{
+                font-family: 'Lexend Deca', sans-serif;
+                margin: 0;
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: $stats_heading;
+                margin-top: 0.4375rem;
+            }
+        }
+    }
+
+.picture_container{
+    width: 50%;
+    height: 26.25rem;
+    background-image: url(/images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 .5rem .5rem 0;
+    
+    div{
+        width: 100%;
+        height: 100%;
+        background-color: hsla(277, 64%, 61%, 0.438);
+        border-radius: 0 .5rem .5rem 0;
+    }
+
+}
+
+.attribution { font-size: 18px; text-align: center; background-color: $general_background; color: $blanco; width: 100%;}
+.attribution a { color: hsl(228, 45%, 44%); color: rgb(128, 128, 255); }
+            
+
+
+
+
+@media screen and (max-width: 650px) {
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        width: 18.75rem;
+        height: 55.625rem;
+        border-radius: 1rem;
+    }
+
+    .text_container{
+        width: 100%;
+        display: flex;
+    }
+    .principal_text{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 2rem 2.125rem 1rem 2.125rem;
+    }
+
+    .paragraph{
+        font-size: 1rem;
+        text-align: center;
+        margin: 1rem 2.125rem 0 2.125rem;
+    }
+
+    .info_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 2rem 3.125rem 1rem 3.125rem;
+        height: 15.625rem;
+
+        div{
+            font-family: 'Inter', sans-serif;
+            font-size: 1.4rem;
+            margin: 0;
+            display: flex;
+            font-weight: 700;
+            flex-direction: column;
+            justify-content: center;
+
+            p{
+                font-family: 'Lexend Deca', sans-serif;
+                margin: 0;
+                font-size: 1rem;
+                font-weight: 400;
+                color: $stats_heading;
+                margin-top: 0.4375rem;
+            }
+        }
+    }
+
+    .picture_container{
+        width: 100%;
+        height: 250px;
+        background-image: url(/images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem 1rem 0 0;
+        div{
+            width: 100%;
+            height: 100%;
+            background-color: hsla(277, 64%, 61%, 0.438);
+            border-radius: 1rem 1rem 0 0;
+        }
+    
+    }
+
+    
+}
